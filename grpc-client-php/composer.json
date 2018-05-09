@@ -1,0 +1,15 @@
+{
+    "name": "icebear/grpc-client-php",
+    "description": "Sample gRPC PHP client",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "": "lib"
+        }
+    },
+    "require": {
+        "grpc/grpc": "^1.10",
+        "google/protobuf": "^3.5"
+    }
+}
