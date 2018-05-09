@@ -46,7 +46,7 @@ For Ruby and PHP
 
 ```
 protoc -I proto --ruby_out=lib --grpc_out=lib --plugin=protoc-gen-grpc=`which grpc_ruby_plugin` proto/doggos.proto
-protoc -I proto --php_out=grpc-php-client/lib --grpc_out=grpc-php-client/lib --plugin=protoc-gen-grpc=`which grpc_php_plugin` proto/doggos.proto
+protoc -I proto --php_out=grpc-client-php/lib --grpc_out=grpc-client-php/lib --plugin=protoc-gen-grpc=`which grpc_php_plugin` proto/doggos.proto
 ```
 For PHP, you will also want to run `composer install` and `pecl install grpc` as well.
 
