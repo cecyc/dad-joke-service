@@ -12,13 +12,14 @@ import (
 )
 
 const (
-	port = ":50051"
+	port        = ":50051"
+	placeholder = "How much does a hipster weigh? An instagram."
 )
 
 type server struct{}
 
 func (s *server) GetDadJoke(c context.Context, req *pb.DadJokeRequest) (*pb.DadJokeResponse, error) {
-	joke := &pb.DadJokeResponse{Joke: "boop"}
+	joke := &pb.DadJokeResponse{Joke: placeholder}
 	return joke, nil
 }
 
